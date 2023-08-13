@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - A program that prints different sizes of various computer
  * Return: 0(Sucess)
