@@ -1,4 +1,5 @@
 #include "main.h"
+int _root_sqrt(int raiz, int cont);
 
 /**
  * _sqrt_recursion - This function will
@@ -20,5 +21,28 @@ int _sqrt_recursion(int n)
 	else
 	{
 		return (_root_sqrt(n, 1));
+	}
+}
+
+/**
+ * _root_sqrt - This funtion will calculate the square root
+ * @raiz: This will be the value to calc the square root
+ * @cont: This will be the variable to cont
+ *
+ * Return: the number with the solution
+ */
+int _root_sqrt(int raiz, int cont)
+{
+	if (cont * cont == raiz)
+	{
+		return (cont);
+	}
+	else if (cont * cont > raiz)
+	{
+		return (-1);
+	}
+	else
+	{
+		return (_root_sqrt(raiz, cont + 1));
 	}
 }
