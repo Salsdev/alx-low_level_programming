@@ -1,6 +1,5 @@
 #include "lists.h"
 
-size_t looped_listint_count(listint_t *head);
 /**
  * oped_listint_count - Counts the number of unique nodes
  *
