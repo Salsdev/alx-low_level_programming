@@ -21,11 +21,12 @@ listint_t *find_listint_loop(listint_t *head)
 		second_loop = head;
 		while (first_loop && second_loop != first_loop)
 		{
-			if (second_loop == first_loop->next)
-			{
-				return (second_loop);
-			}
 			second_loop = second_loop->next;
+		}
+
+		if (second_loop == first_loop)
+		{
+			return (second_loop);
 		}
 	}
 	return (first_loop);
