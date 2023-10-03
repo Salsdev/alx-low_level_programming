@@ -1,52 +1,31 @@
 #include "main.h"
 
 /**
- * _strlen - returns length of string
- * @s: string
- * Return: length of string
+ * create_file - This function is such that creates a file
+ * @filename: This is the type of char to the
+ * @text_content: This is the type char pointer of char
+ * Return: -1 if NULL and 1 on success
  */
-
-int _strlen(char *s)
-{
-	int fen = 0;
-
-	while (s[fen] != '\0')
-	{
-		fen++
-	}
-	return (fen);
-}
-
-/**
- * create_file - creates a file
- * @text_content: text
- * @filename: name of file
- * Returns: 1 - success, -1 error
- */
-
 int create_file(const char *filename, char *text_content)
 {
-	int sa;
-	unsigned int lenght;
-	ssize_t bytes_written;
+	int final_exit = 0;
+	int h = 0;
+	int f = 0;
 
 	if (filename == NULL)
 		return (-1);
-	sa = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-	if (sa == -1)
+	h = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
+	if (h == -1)
 		return (-1);
-
-	if (text_content == NULL)
+	if (text_content != NULL)
 	{
-		lenght = 0;
-		text_content = "";
+		while (*(text_content + f) != '\0')
+		{
+			f++;
+		}
+		final_exit = write(h, text_content, f);
 	}
-	else
-		length = _strlen(text_content);
-
-	bytes_written = write(fd, text_content, length);
-	if (bytes_written == -1)
+	if (final_exit == -1 && final_exit != f)
 		return (-1);
-	close(sa);
 	return (1);
 }
