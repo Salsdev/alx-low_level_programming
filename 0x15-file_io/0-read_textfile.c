@@ -5,7 +5,7 @@
  * print it to the POSIX standard output
  * @filename: This is the type character of the filename
  * @letters: This is the type size_t letters
- * Returns:if cannot be oppened or read 0, if is NULL 0, if writes fail 0
+ * Return:if cannot be oppened or read 0, if is NULL 0, if writes fail 0
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
