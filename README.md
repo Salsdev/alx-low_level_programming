@@ -66,7 +66,11 @@ Welcome to my repository documenting my progress in the ALX Software Engineering
 ### 0x15-file_io
 - [x] Task: File I/O - Exploring file input and output in C, including reading and writing data to files.
 
-## In Progress
+### 0x17-doubly_linked_lists
+- [x] Task: Doubly linked list
+
+### 0x18-dynamic_libraries
+- [x] Task: Dynamic Libraries
 
 Although these specific tasks are now complete, my journey with the ALX Software Engineering program continues. Keep an eye out for further updates as I persist in advancing my learning and honing my skills in this exciting field.
 
