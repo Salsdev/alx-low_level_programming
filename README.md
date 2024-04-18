@@ -78,5 +78,5 @@ Although these specific tasks are now complete, my journey with the ALX Software
 
 I'd like to express my gratitude to the ALX Software Engineering program mentors and fellow learners who have supported me throughout this learning journey. Your guidance and collaboration have been invaluable.
 
-### #DoHardThings
+### #DoHardThings.
 ###Salsdev
