@@ -157,11 +157,11 @@ void print_version(unsigned char *e_ident)
 
 /**
  * print_osabi - Prints the OS/ABI of an ELF header.
- * @e_ident: A pointer to an array containing the ELF version
+ * @e_ident: A pointer to an array containing the ELF
  */
 void print_osabi(unsigned char *e_ident)
 {
-	printf("  OS/ABI:                            ");
+	printf("  OS/ABI:                 		");
 
 	switch (e_ident[EI_OSABI])
 	{
@@ -232,12 +232,12 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 			break;
 		case ET_EXEC:
 			printf("EXEC (Executable file)\n");
-			break;case ET_DYN:
+			break; case ET_DYN:
 				printf("DYN (Shared object file)\n");
 			break;
 		case ET_CORE:
 			printf("CORE (Core file)\n");
-			break;default:
+			break; default:
 				printf("<unknown: %x>\n", e_type);
 	}
 }
